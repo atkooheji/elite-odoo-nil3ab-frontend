@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- INJECTS THE DRAG-AND-DROP SNIPPET INTO THE WEBSITE BUILDER SIDEBAR (ALL WEBSITES) -->
+    <template id="snippet_nil3ab_frontend" inherit_id="website.snippets">
+        <xpath expr="." position="inside">
+            <t t-snippet="nil3ab_frontend.snippet_react_engine" string="Nil3ab React Container" t-thumbnail="/website/static/src/img/snippets_thumbs/s_call_to_action.svg">
+                <div class="s_nil3ab_react_host" data-component="DefaultApp" style="min-height: 300px; width: 100%;">
+                    <!-- Component injects here globally -->
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- THE ACTUAL RENDERED BLOCK TEMPLATE -->
+    <template id="snippet_react_engine" name="Neo-Brutalist React App Container">
+        <section class="s_nil3ab_react_host" data-component="DefaultApp">
+            <div class="container py-5 text-center text-muted">
+                ⚡ Powering Up Neo-Brutalist Engine...
+            </div>
+        </section>
+    </template>
+</odoo>
